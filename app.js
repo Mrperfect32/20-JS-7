@@ -31,8 +31,8 @@ allImages.map((el, index)=>{
 
        left.addEventListener('click', function(){
         currentIndex -= 1;
-        if(currentIndex <= allImages.length ){
-            currentIndex = allImages.length -1;
+        if(currentIndex < 0){
+            currentIndex = allImages.length - 1;
         }
         previewImg.src = allImages[currentIndex].src
            
